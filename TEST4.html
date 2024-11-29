@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Sorry</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+            max-width: 600px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 2s;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+        .heart {
+            font-size: 5em;
+            color: red;
+            animation: heartbeat 1s infinite;
+        }
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+        button {
+            background-color: #ff6f61;
+            color: white;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        button:hover {
+            background-color: #ff3e2e;
+            transform: scale(1.1);
+        }
+        button:active {
+            transform: scale(1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>hai sayang, saya minta maaf 😔</h1>
+        <p>
+          saya tahu awak kecewa dengan saya, awak terlalu overthingking dengan saya. saya minta maaf
+           saya harap dengan website ni boleh buat awak ceria balik seperti biasa,
+            saya minta maaf. ❤️
+        </p>
+        <div class="heart">❤️</div>
+        <p>kalau awak maafkan saya, tekan button bawah ni boleh?</p>
+        <button onclick="window.alert('TERIMA KASIH SAYANG MAAFKAN SAYA, SAYA JANJI AKAN JADI LEBIH BAIK DAN BUAT AWAK HAPPY SELALU DENGAN KEMAHIRAN SAYA ADA NI!!! MUAHHH ILOVEYOUUUUU❤️!')">I Forgive You</button>
+    </div>
+</body>
+</html>
